@@ -17,4 +17,5 @@ $_MODULE['<{mdevrecaptcha}prestashop>configure_9822cad667a1f443084b6e0781a0d5d0'
 $_MODULE['<{mdevrecaptcha}prestashop>configure_99dea78007133396a7b8ed70578ac6ae'] = 'Login';
 $_MODULE['<{mdevrecaptcha}prestashop>configure_0f98b7f230f3c91292f0de4c99e263f2'] = 'Registración';
 $_MODULE['<{mdevrecaptcha}prestashop>configure_3f65d6e17a11466983fd177702cf6a71'] = 'Formulario de Contacto';
+$_MODULE['<{mdevrecaptcha}prestashop>configure_ab133a6a5c7e0f36c1f7e898758af7b8'] = 'Comentario del producto';
 $_MODULE['<{mdevrecaptcha}prestashop>configure_c9cc8cce247e49bae79f15173ce97354'] = 'Guardar';
