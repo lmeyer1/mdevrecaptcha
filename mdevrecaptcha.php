@@ -69,7 +69,7 @@ class MdevRecaptcha extends Module implements WidgetInterface
 
 
     // WIDGET FUNCTIONS
-    public function renderWidget($hookName, array $configuration) 
+    public function renderWidget($hookName, array $configuration)
     {
         $this->smarty->assign($this->getWidgetVariables($hookName , $configuration));
 
@@ -259,7 +259,7 @@ class MdevRecaptcha extends Module implements WidgetInterface
 
     public function getCaptchaViolationMessage()
     {
-        return $this->l('There was an error, please try again.');
+        return $this->l('There was an error while verifying the captcha.');
     }
 
 

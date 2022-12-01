@@ -4,7 +4,7 @@ global $_MODULE;
 $_MODULE = array();
 $_MODULE['<{mdevrecaptcha}prestashop>mdevrecaptcha_10d1553c249ca3165ac6781ed4617515'] = 'Google reCaptcha v3 - Anti Spam';
 $_MODULE['<{mdevrecaptcha}prestashop>mdevrecaptcha_79d1d7d44ad3678d7a98572aaeb19e8b'] = 'Implementiert das neueste Captcha von Google für: Login, Registrierung und Kontakt-Formular';
-$_MODULE['<{mdevrecaptcha}prestashop>mdevrecaptcha_be57e61cb523754205be074d8e4bd64b'] = 'Es ist ein Fehler aufgetreten, bitte versuchen Sie es erneut.';
+$_MODULE['<{mdevrecaptcha}prestashop>mdevrecaptcha_c6ecac82640dc0b095b2aa901a1c6f42'] = 'Bei der Überprüfung des Captcha ist ein Fehler aufgetreten.';
 $_MODULE['<{mdevrecaptcha}prestashop>configure_d018632590e54ab51324c39554ccbb68'] = 'Google reCaptcha Konfiguration';
 $_MODULE['<{mdevrecaptcha}prestashop>configure_1b055eb345f9f017d74fd50d10830677'] = 'Erste Schritte:';
 $_MODULE['<{mdevrecaptcha}prestashop>configure_c062d32220950cecc136af14f5b239d5'] = '1- Registrieren Sie Ihre Website auf der Seite Google reCaptcha v3 Admin Console.';
