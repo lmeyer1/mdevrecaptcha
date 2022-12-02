@@ -28,7 +28,12 @@ class ContactController extends ContactControllerCore
     public function initContent()
     {
         $mdevrecaptcha_module = Module::getInstanceByName('mdevrecaptcha');
-
+        if (in_array(Tools::getValue('from'), [
+            'ericjonesmyemail@gmail.com',
+        ])) {
+            $_POST = [];
+            $_REQUEST = [];
+        }
         if ($mdevrecaptcha_module->isValidSection() && Tools::isSubmit('submitMessage')) {
             $gtoken = Tools::getValue("mdevrecaptcha_gtoken");
 
