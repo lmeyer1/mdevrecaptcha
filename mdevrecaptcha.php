@@ -160,6 +160,9 @@ class MdevRecaptcha extends Module implements WidgetInterface
     //Hooks Functions
     public function validToken($gtoken)
     {
+        if (Tools::getValue('g-recaptcha-response') !== false) {
+            return false;
+        }
         if (!$gtoken || $gtoken == "") {
             return false;
         } else {
