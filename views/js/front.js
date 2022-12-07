@@ -28,9 +28,11 @@
 
 
 $( document ).ready(function() {
-	grecaptcha.ready(function() {
-		grecaptcha.execute(mdevrecaptcha_gk, {action: 'homepage'}).then(function(token) {
-			$('input[name="mdevrecaptcha_gtoken"]').val(token);
-	    });
-	});
+  grecaptcha.ready(function() {
+    let field = $('input[name="mdevrecaptcha_gtoken"]'),
+      action = field.closest('form').attr('id') || 'other'
+    grecaptcha.execute(mdevrecaptcha_gk, {action: action}).then(function(token) {
+      field.val(token);
+      });
+  });
 });

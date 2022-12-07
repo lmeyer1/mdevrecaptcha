@@ -6,9 +6,10 @@
 function mdevrecaptcha_submitWidget(e, obj, action = 'submit') {
     e.preventDefault();
     grecaptcha.ready(function() {{/literal}
-        grecaptcha.execute('{$recaptcha_token}'{literal}, {action: 'login'}).then(function(token) {
-            $('input[name="mdevrecaptcha_gtoken"]').val(token);
-            
+        let field = $('input[name="mdevrecaptcha_gtoken"]'),
+            action = field.closest('form').attr('id') || 'widget'
+        grecaptcha.execute('{$recaptcha_token}'{literal}, {action: action}).then(function(token) {
+            field.val(token);
             if(action == 'click') {
                 obj.click();
             }
