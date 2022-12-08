@@ -30,7 +30,8 @@
 $( document ).ready(function() {
   grecaptcha.ready(function() {
     let field = $('input[name="mdevrecaptcha_gtoken"]'),
-      action = field.closest('form').attr('id') || 'other'
+      action = field.closest('form').attr('id') || 'other';
+    action = action.replace('-', '_').replace(/[^a-z0-9_\/]/gi, '')
     grecaptcha.execute(mdevrecaptcha_gk, {action: action}).then(function(token) {
       field.val(token);
       });

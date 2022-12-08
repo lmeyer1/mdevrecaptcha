@@ -7,7 +7,8 @@ function mdevrecaptcha_submitWidget(e, obj, action = 'submit') {
     e.preventDefault();
     grecaptcha.ready(function() {{/literal}
         let field = $('input[name="mdevrecaptcha_gtoken"]'),
-            action = field.closest('form').attr('id') || 'widget'
+            action = field.closest('form').attr('id') || 'widget';
+        action = action.replace('-', '_').replace(/[^a-z0-9_\/]/gi, '')
         grecaptcha.execute('{$recaptcha_token}'{literal}, {action: action}).then(function(token) {
             field.val(token);
             if(action == 'click') {
